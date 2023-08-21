@@ -1,0 +1,33 @@
+{
+  "name": "groves",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npx tsc && node dist/index.js",
+    "lint": "eslint . --ext .ts",
+    "fmt": "prettier --config .prettierrc 'src/**/*.ts' --check",
+    "fmt:fix": "prettier --config .prettierrc 'src/**/*.ts' --write"
+  },
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/web3.js": "^1.76.0",
+    "tslog": "^4.8.2",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.1",
+    "@types/express": "^4.17.17",
+    "@typescript-eslint/eslint-plugin": "^5.59.6",
+    "@typescript-eslint/parser": "^5.59.6",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.41.0",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "ts-proto": "^1.147.3",
+    "typescript": "^5.0.4"
+  }
+}
